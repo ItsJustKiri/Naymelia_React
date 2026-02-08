@@ -19,17 +19,6 @@
     "allowJs": true,
     "checkJs": false,
 
-    "baseUrl": ".",
-    "paths": {
-      "@/layout/*": ["src/layout/*"],
-      "@/assets/*": ["src/assets/*"],
-      "@/context/*": ["src/context/*"],
-      "@/services/*": ["src/services/*"],
-      "@/components/*": ["src/components/*"],
-      "@/icons/*": ["src/components/Icons/*"],
-      "@/language/*": ["src/const/languages/*"],
-    },
-
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,

@@ -171,7 +171,7 @@ export const TiktokIcon = ({ className, ...props }) => (
 );
 
 /* Heart */
-export const HeartIcon = ({ className, ...props }) => (
+export const HearthIcon = ({ className, ...props }) => (
     <svg
         fill="none"
         stroke="currentColor"
@@ -186,7 +186,7 @@ export const HeartIcon = ({ className, ...props }) => (
     </svg>
 );
 
-export const HeartFillIcon = ({ className, ...props }) => (
+export const HearthFillIcon = ({ className, ...props }) => (
     <svg
         fill="currentColor"
         stroke="currentColor"

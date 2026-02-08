@@ -210,3 +210,47 @@ html, body {
     font-style: normal;
     font-display: swap;
 }
+
+@layer utilities {
+	.md\:grid-areas-layout {
+		grid-template-areas:
+			"header header"
+			"aside main"
+			"aside footer";
+	}
+}
+
+/*Animations*/
+/*WhatsApp FAB*/
+@keyframes pulse-multi {
+    0% { transform: scale(1); }
+    20% { transform: scale(1.05); }
+    40% { transform: scale(1); }
+    60% { transform: scale(1.05); }
+}
+
+.pulse-multi {
+animation: pulse-multi 1.2s ease-in-out;
+}
+
+/* Scroll */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #B16171;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #B16171;
+}
+
+html {
+    scroll-behavior: smooth;
+}
