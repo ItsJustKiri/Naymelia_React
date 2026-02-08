@@ -1,0 +1,212 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+    themes: false;
+}
+
+html, body {
+    background-color: #FFF9F9;
+}
+
+@theme {
+    /*Pallette Colors*/
+    --color-dark-goldenrod-100: #EFDFC9;
+    --color-dark-goldenrod-200: #DEC296;
+    --color-dark-goldenrod-300: #CDA663;
+    --color-dark-goldenrod-400: #C59849;
+    --color-dark-goldenrod-500: #BC892F;
+    --color-dark-goldenrod-600: #A5782A;
+    --color-dark-goldenrod-700: #8D6724;
+    --color-dark-goldenrod-800: #5E4518;
+    --color-dark-goldenrod-900: #2F230C;
+
+    --color-rosewood-100: #D8B0B8;
+    --color-rosewood-200: #CF9DA7;
+    --color-rosewood-300: #C58995;
+    --color-rosewood-400: #BB7583;
+    --color-rosewood-500: #B16171;
+    --color-rosewood-600: #9B5563;
+    --color-rosewood-700: #854955;
+    --color-rosewood-800: #6F3D47;
+    --color-rosewood-900: #593139;
+
+    --color-cotton-rose-100: #F7E2DF;
+    --color-cotton-rose-200: #F3D4CF;
+    --color-cotton-rose-300: #F1CDC7;
+    --color-cotton-rose-400: #F0C9C3;
+    --color-cotton-rose-500: #EFC5BE;
+    --color-cotton-rose-600: #E1B9B3;
+    --color-cotton-rose-700: #E1B9B3;
+    --color-cotton-rose-800: #B4948F;
+    --color-cotton-rose-900: #78635F;
+
+    --color-seashell-100: #FCF4F0;
+    --color-seashell-200: #DDD6D2;
+    --color-seashell-300: #BDB7B4;
+    --color-seashell-400: #9E9996;
+    --color-seashell-500: #8E8A87;
+    --color-seashell-600: #7E7A78;
+    --color-seashell-700: #6F6B69;
+    --color-seashell-800: #5F5C5A;
+    --color-seashell-900: #3F3D3C;
+    
+    --color-dusty-taupe-100: #D9C9C1;
+    --color-dusty-taupe-200: #D0BCB2;
+    --color-dusty-taupe-300: #C6AEA2;
+    --color-dusty-taupe-400: #BCA093;
+    --color-dusty-taupe-500: #B29283;
+    --color-dusty-taupe-600: #9C8073;
+    --color-dusty-taupe-700: #866E63;
+    --color-dusty-taupe-800: #705C53;
+    --color-dusty-taupe-900: #594942;
+
+    /*Fonts*/
+    --font-sans: 'Raleway', 'system-ui', 'sans-serif';
+    --font-playfair: 'PlayfairDisplay', 'sans-serif';
+    --font-praise: 'Praise', 'sans-serif';
+}
+
+/*Font Faces*/
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('./assets/Fonts/PlayfairDisplay/PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('./assets/Fonts/PlayfairDisplay/PlayfairDisplay-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('./assets/Fonts/PlayfairDisplay/PlayfairDisplay-Medium.woff2') format('woff2'),
+        url('./assets/Fonts/PlayfairDisplay/PlayfairDisplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('./assets/Fonts/PlayfairDisplay/PlayfairDisplay-SemiBold.woff2') format('woff2'),
+        url('./assets/Fonts/PlayfairDisplay/PlayfairDisplay-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('./assets/Fonts/PlayfairDisplay/PlayfairDisplay-Bold.woff2') format('woff2'),
+        url('./assets/Fonts/PlayfairDisplay/PlayfairDisplay-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('./assets/Fonts/PlayfairDisplay/PlayfairDisplay-ExtraBold.woff2') format('woff2'),
+        url('./assets/Fonts/PlayfairDisplay/PlayfairDisplay-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('./assets/Fonts/PlayfairDisplay/PlayfairDisplay-Black.woff2') format('woff2'),
+        url('./assets/Fonts/PlayfairDisplay/PlayfairDisplay-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('./assets/Fonts/Raleway/Raleway-Thin.woff2') format('woff2'),
+        url('./assets/Fonts/Raleway/Raleway-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('./assets/Fonts/Raleway/Raleway-ExtraLight.woff2') format('woff2'),
+        url('./assets/Fonts/Raleway/Raleway-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('./assets/Fonts/Raleway/Raleway-Light.woff2') format('woff2'),
+        url('./assets/Fonts/Raleway/Raleway-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('./assets/Fonts/Raleway/Raleway-Regular.woff2') format('woff2'),
+        url('./assets/Fonts/Raleway/Raleway-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('./assets/Fonts/Raleway/Raleway-Medium.woff2') format('woff2'),
+        url('./assets/Fonts/Raleway/Raleway-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('./assets/Fonts/Raleway/Raleway-SemiBold.woff2') format('woff2'),
+        url('./assets/Fonts/Raleway/Raleway-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('./assets/Fonts/Raleway/Raleway-Bold.woff2') format('woff2'),
+        url('./assets/Fonts/Raleway/Raleway-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('./assets/Fonts/Raleway/Raleway-ExtraBold.woff2') format('woff2'),
+        url('./assets/Fonts/Raleway/Raleway-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('./assets/Fonts/Raleway/Raleway-Black.woff2') format('woff2'),
+        url('./assets/Fonts/Raleway/Raleway-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Praise';
+    src: url('./assets/Fonts/Praise/Praise-Regular.woff2') format('woff2'),
+        url('./assets/Fonts/Praise/Praise-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
