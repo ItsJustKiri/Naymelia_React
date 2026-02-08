@@ -3,7 +3,10 @@ import { TitleAndSubtitleIcon } from '../Icons/Logos.jsx'
 import { SearchIcon, CarIcon } from '../Icons/Icons.jsx'
 import ProfileMenu from '../profile/ProfileMenu.jsx'
 
+
 function Header() {
+    const name = "Usuario"
+    
     return (
         <div
             className="flex items-center justify-between w-full px-4 md:px-5 gap-4 md:gap-auto"
@@ -36,10 +39,10 @@ function Header() {
                             Saludos,
                         </div>
                         <div className="text-gray-900 font-playfair font-semibold">
-                            Israel Beltrán
+                            {name}
                         </div>
                     </div>
-                    <ProfileMenu user={{ name: "Israel Beltrán" }} />
+                    <ProfileMenu user={name} />
                 </div>
             </div>
         </div>

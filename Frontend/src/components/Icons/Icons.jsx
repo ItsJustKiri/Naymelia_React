@@ -1,7 +1,7 @@
 import * as React from "react";
 
 /* Navigation */
-const HomeIcon = ({ className, ...props }) => (
+export const HomeIcon = ({ className, ...props }) => (
     <svg
         fill="none"
         stroke="currentColor"
