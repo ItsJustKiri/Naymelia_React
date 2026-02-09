@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 export default function ProfileMenu({ user }) {
   const [open, setOpen] = useState(false);
@@ -31,20 +32,47 @@ export default function ProfileMenu({ user }) {
           </div>
 
           <ul className="flex flex-col font-medium">
-            <li className="px-4 py-3 hover:bg-seashell-100 cursor-pointer">
-              Mis pedidos
-            </li>
-            <li className="px-4 py-3 hover:bg-seashell-100 cursor-pointer">
-              Mis citas
-            </li>
-            <li className="px-4 py-3 hover:bg-seashell-100 cursor-pointer">
-              Mi perfil
+            <li>
+              <NavLink
+                to="/pedidos"
+                onClick={() => setOpen(false)}
+                className="block px-4 py-3 hover:bg-seashell-100"
+              >
+                Mis pedidos
+              </NavLink>
             </li>
 
-            <li className="border-t px-4 py-3 text-rosewood-500 hover:bg-red-50 cursor-pointer">
-              Iniciar Sesión
+            <li>
+              <NavLink
+                to="/citas"
+                onClick={() => setOpen(false)}
+                className="block px-4 py-3 hover:bg-seashell-100"
+              >
+                Mis citas
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink
+                to="/perfil"
+                onClick={() => setOpen(false)}
+                className="block px-4 py-3 hover:bg-seashell-100"
+              >
+                Mi perfil
+              </NavLink>
+            </li>
+
+            <li className="border-t">
+              <NavLink
+                to="/login"
+                onClick={() => setOpen(false)}
+                className="block px-4 py-3 text-rosewood-500 hover:bg-red-50"
+              >
+                Iniciar sesión
+              </NavLink>
             </li>
           </ul>
+
         </div>
       )}
     </div>

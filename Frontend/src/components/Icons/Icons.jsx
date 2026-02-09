@@ -262,6 +262,38 @@ export const StarFillIcon = ({ className, ...props }) => (
     </svg>
 );
 
+/* Eye */
+export const EyeOpenIcon = ({ className, ...props }) => (
+    <svg
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        className={className}
+        {...props}
+    >
+        <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path>
+        <circle cx="12" cy="12" r="3"></circle>
+    </svg>
+);
+
+export const EyeClosedIcon = ({ className, ...props }) => (
+    <svg
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        className={className}
+        {...props}
+    >
+        <path d="m15 18-.722-3.25M2 8a10.645 10.645 0 0 0 20 0M20 15l-1.726-2.05M4 15l1.726-2.05M9 18l.722-3.25"></path>
+    </svg>
+);
+
 /* Others */
 export const CalendarDaysIcon = ({ className, ...props }) => (
     <svg
@@ -327,5 +359,68 @@ export const CarIcon = ({ className, ...props }) => (
         <circle cx="8" cy="21" r="1"></circle>
         <circle cx="19" cy="21" r="1"></circle>
         <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+    </svg>
+);
+
+export const LockIcon = ({ className, ...props }) => (
+    <svg
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        className={className}
+        {...props}
+    >
+        <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+    </svg>
+);
+
+export const PhoneIcon = ({ className, ...props }) => (
+    <svg
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        className={className}
+        {...props}
+        viewBox="0 0 24 24"
+    >
+        <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+    </svg>
+);
+
+export const CircleCheckIcon = ({ className, ...props }) => (
+    <svg
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        className={className}
+        {...props}
+        viewBox="0 0 24 24"
+    >
+        <circle cx="12" cy="12" r="10"></circle>
+        <path d="m9 12 2 2 4-4"></path>
+    </svg>
+);
+
+export const UserIcon = ({ className, ...props }) => (
+    <svg
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        className={className}
+        {...props}
+        viewBox="0 0 24 24"
+    >
+        <circle cx="12" cy="8" r="5"></circle>
+        <path d="M20 21a8 8 0 0 0-16 0"></path>
     </svg>
 );

@@ -61,6 +61,8 @@ body {
     --color-dusty-taupe-800: #705C53;
     --color-dusty-taupe-900: #594942;
 
+    --color-background-100: #FFF9F9;
+
     /*Fonts*/
     --font-sans: 'Raleway', 'system-ui', 'sans-serif';
     --font-playfair: 'PlayfairDisplay', 'sans-serif';
