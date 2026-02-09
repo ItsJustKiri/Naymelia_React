@@ -2,6 +2,7 @@ import React from 'react'
 import { TitleAndSubtitleIcon } from '../Icons/Logos.jsx'
 import { SearchIcon, CarIcon } from '../Icons/Icons.jsx'
 import ProfileMenu from '../profile/ProfileMenu.jsx'
+import ShopCarMenu from '../shopcar/ShopCarMenu.jsx'
 
 
 function Header() {
@@ -29,9 +30,7 @@ function Header() {
             </div>
 
             <div className="flex flex-row items-center gap-6 shrink-0 text-dusty-taupe-500">
-                <CarIcon
-                    className="size-7 transition-all duration-200 hover:scale-102 hover:text-rosewood-500"
-                />
+                <ShopCarMenu/>
 
                 <div className="flex gap-3 items-center">
                     <div className="hidden md:flex md:flex-col text-right">
