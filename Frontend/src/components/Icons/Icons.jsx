@@ -1,6 +1,36 @@
 import * as React from "react";
 
 /* Navigation */
+export const BurguerIcon = ({ className, ...props }) => (
+    <svg
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        className={className}
+        {...props}
+    >
+        <path d="M4 5h16M4 12h16M4 19h16"></path>
+    </svg>
+);
+
+export const CloseIcon = ({ className, ...props }) => (
+    <svg
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        className={className}
+        {...props}
+    >
+        <path d="M18 6 6 18M6 6l12 12"></path>
+    </svg>
+);
+
 export const HomeIcon = ({ className, ...props }) => (
     <svg
         fill="none"
@@ -154,7 +184,7 @@ export const FacebookIcon = ({ className, ...props }) => (
 );
 
 export const TiktokIcon = ({ className, ...props }) => (
-    <svg 
+    <svg
         fill="currentColor"
         stroke="none"
         strokeLinecap="round"

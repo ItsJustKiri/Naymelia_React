@@ -99,7 +99,7 @@ function Footer() {
                         © 2026 Naymelia. Todos los derechos reservados.
                     </span>
 
-                    <span className="flex gap-2 text-dusty-taupe-500 text-base items-center">
+                    <span className="flex gap-2 text-dusty-taupe-500 text-base items-center mb-8 md:mb-0">
                         <HearthIcon className="size-7 text-rosewood-100" />
                         Hecho con amor por el equipo Naymelia
                     </span>

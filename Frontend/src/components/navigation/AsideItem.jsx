@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-function AsideItem({ to, label, children }) {
+function AsideItem({ to, label, children, onNavigate }) {
     const base =
         "flex items-center gap-3 rounded-2xl px-4 py-3 font-medium transition";
 
@@ -13,12 +13,13 @@ function AsideItem({ to, label, children }) {
     return (
         <NavLink
             to={to}
+            onClick={() => onNavigate?.()}
             className={({ isActive }) =>
                 `${base} ${isActive ? active : idle}`
             }
         >
             {children}
-            <span className="hidden lg:inline text-lg font-bold">{label}</span>
+            <span className="inline text-lg font-bold">{label}</span>
         </NavLink>
     );
 }
