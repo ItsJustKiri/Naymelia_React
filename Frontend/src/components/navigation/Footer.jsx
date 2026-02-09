@@ -20,14 +20,14 @@ function Footer() {
                             <TitleAndSubtitleIcon />
                         </a>
 
-                        <p className="text-dusty-taupe-500 text-sm mb-4 text-center md:text-left">
+                        <p className="text-dusty-taupe-500 text-lg mb-4 text-center md:text-left">
                             Transformando la belleza a través del arte y el cuidado consciente.
                             Inspirando confianza y elegancia en cada sesión.
                         </p>
 
-                        <div className="flex flex-col gap-2 text-dusty-taupe-500 text-sm">
+                        <div className="flex flex-col gap-2 text-dusty-taupe-500 text-base">
                             <a href="#" className="flex items-center gap-2 hover:underline">
-                                <EmailIcon className="size-5" /> naymelia.ib@gmail.com
+                                <EmailIcon className="size-7" /> naymelia.ib@gmail.com
                             </a>
 
                             <a
@@ -36,11 +36,11 @@ function Footer() {
                                 rel="noopener noreferrer"
                                 className="flex items-center gap-2 hover:underline"
                             >
-                                <WsIcon className="size-5" /> +52 (663) 669-31-94
+                                <WsIcon className="size-7" /> +52 (663) 669-31-94
                             </a>
 
                             <a href="#" className="flex items-center gap-2 hover:underline">
-                                <MapIcon className="size-5" /> Tijuana, Baja California, México
+                                <MapIcon className="size-7" /> Tijuana, Baja California, México
                             </a>
                         </div>
 
@@ -49,22 +49,22 @@ function Footer() {
                                 href="https://wa.me/526636693194"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="bg-rosewood-100 p-2 rounded hover:bg-rosewood-100/50"
+                                className="bg-rosewood-100 p-2 rounded hover:bg-rosewood-100/50 cursor-pointer"
                                 aria-label="WhatsApp"
                             >
-                                <WsIcon className="size-7 text-rosewood-500" />
+                                <WsIcon className="size-8 text-rosewood-500" />
                             </a>
 
-                            <a className="bg-rosewood-100 p-2 rounded hover:bg-rosewood-100/50">
-                                <InstagramIcon className="size-7 text-rosewood-500" />
+                            <a className="bg-rosewood-100 p-2 rounded hover:bg-rosewood-100/50 cursor-pointer">
+                                <InstagramIcon className="size-8 text-rosewood-500" />
                             </a>
 
-                            <a className="bg-rosewood-100 p-2 rounded hover:bg-rosewood-100/50">
-                                <FacebookIcon className="size-7 text-rosewood-500" />
+                            <a className="bg-rosewood-100 p-2 rounded hover:bg-rosewood-100/50 cursor-pointer">
+                                <FacebookIcon className="size-8 text-rosewood-500" />
                             </a>
 
-                            <a className="bg-rosewood-100 p-2 rounded hover:bg-rosewood-100/50">
-                                <TiktokIcon className="size-7 text-rosewood-500" />
+                            <a className="bg-rosewood-100 p-2 rounded hover:bg-rosewood-100/50 cursor-pointer">
+                                <TiktokIcon className="size-8 text-rosewood-500" />
                             </a>
                         </div>
                     </div>
@@ -72,21 +72,21 @@ function Footer() {
                     {/* LINKS */}
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 md:w-2/3">
                         <div>
-                            <h2 className="mb-4 font-semibold">Explorar</h2>
-                            <ul className="space-y-2 text-dusty-taupe-500 text-sm">
-                                <li><a className="hover:underline">Sobre nosotros</a></li>
-                                <li><a className="hover:underline">Nuestro Trabajo</a></li>
-                                <li><a className="hover:underline">Tienda Online</a></li>
-                                <li><a className="hover:underline">Nuestros Servicios</a></li>
+                            <h2 className="mb-4 font-semibold text-lg">Explorar</h2>
+                            <ul className="space-y-2 text-dusty-taupe-500 text-base">
+                                <li><a className="hover:underline cursor-pointer">Sobre nosotros</a></li>
+                                <li><a className="hover:underline cursor-pointer">Nuestro Trabajo</a></li>
+                                <li><a className="hover:underline cursor-pointer">Tienda Online</a></li>
+                                <li><a className="hover:underline cursor-pointer">Nuestros Servicios</a></li>
                             </ul>
                         </div>
 
                         <div>
-                            <h2 className="mb-4 font-semibold">Asistencia</h2>
-                            <ul className="space-y-2 text-dusty-taupe-500 text-sm">
-                                <li><a className="hover:underline">Preguntas Frecuentes</a></li>
-                                <li><a className="hover:underline">Términos y Condiciones</a></li>
-                                <li><a className="hover:underline">Política de Privacidad</a></li>
+                            <h2 className="mb-4 font-semibold text-lg">Asistencia</h2>
+                            <ul className="space-y-2 text-dusty-taupe-500 text-base">
+                                <li><a className="hover:underline cursor-pointer">Preguntas Frecuentes</a></li>
+                                <li><a className="hover:underline cursor-pointer">Términos y Condiciones</a></li>
+                                <li><a className="hover:underline cursor-pointer">Política de Privacidad</a></li>
                             </ul>
                         </div>
                     </div>
@@ -94,13 +94,13 @@ function Footer() {
 
                 <hr className="my-6 border-rosewood-100" />
 
-                <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-                    <span className="text-dusty-taupe-500 text-sm text-center">
+                <div className="flex flex-col md:flex-row justify-evenly items-center gap-4">
+                    <span className="text-dusty-taupe-500 text-base text-center">
                         © 2026 Naymelia. Todos los derechos reservados.
                     </span>
 
-                    <span className="flex gap-2 text-dusty-taupe-500 text-sm items-center">
-                        <HearthIcon className="size-5 text-rosewood-100" />
+                    <span className="flex gap-2 text-dusty-taupe-500 text-base items-center">
+                        <HearthIcon className="size-7 text-rosewood-100" />
                         Hecho con amor por el equipo Naymelia
                     </span>
                 </div>

@@ -24,7 +24,7 @@ function App() {
         </aside>
 
         <main className='md:[grid-area:main] flex'>
-          <h1 className="font-bold text-3xl">Welcome to Naymelia!</h1>
+          <h1 className="font-bold text-3xl"></h1>
         </main>
 
         <footer className='md:[grid-area:footer]'>

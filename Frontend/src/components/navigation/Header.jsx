@@ -12,7 +12,7 @@ function Header() {
             className="flex items-center justify-between w-full px-4 md:px-5 gap-4 md:gap-auto"
         >
             <div className="shrink-0">
-                <TitleAndSubtitleIcon className="w-32 md:w-40 h-auto" />
+                <TitleAndSubtitleIcon className="w-32 md:w-48 h-auto" />
             </div>
             <div className="hidden md:flex md:flex-1 items-center mx-6">
                 <div
@@ -30,15 +30,15 @@ function Header() {
 
             <div className="flex flex-row items-center gap-6 shrink-0 text-dusty-taupe-500">
                 <CarIcon
-                    className="size-5 transition-all duration-200 hover:scale-102 hover:text-zinc-50"
+                    className="size-7 transition-all duration-200 hover:scale-102 hover:text-rosewood-500"
                 />
 
                 <div className="flex gap-3 items-center">
                     <div className="hidden md:flex md:flex-col text-right">
-                        <div className="text-dusty-taupe-500 font-raleway font-bold">
+                        <div className="text-dusty-taupe-500 font-raleway text-lg font-bold">
                             Saludos,
                         </div>
-                        <div className="text-gray-900 font-playfair font-semibold">
+                        <div className="text-gray-900 text-xl font-playfair font-semibold">
                             {name}
                         </div>
                     </div>

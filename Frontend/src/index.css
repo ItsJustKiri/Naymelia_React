@@ -4,7 +4,8 @@
     themes: false;
 }
 
-html, body {
+html,
+body {
     background-color: #FFF9F9;
 }
 
@@ -49,7 +50,7 @@ html, body {
     --color-seashell-700: #6F6B69;
     --color-seashell-800: #5F5C5A;
     --color-seashell-900: #3F3D3C;
-    
+
     --color-dusty-taupe-100: #D9C9C1;
     --color-dusty-taupe-200: #D0BCB2;
     --color-dusty-taupe-300: #C6AEA2;
@@ -212,42 +213,53 @@ html, body {
 }
 
 @layer utilities {
-	.md\:grid-areas-layout {
-		grid-template-areas:
-			"header header"
-			"aside main"
-			"aside footer";
-	}
+    .md\:grid-areas-layout {
+        grid-template-areas:
+            "header header"
+            "aside main"
+            "aside footer";
+    }
 }
 
 /*Animations*/
 /*WhatsApp FAB*/
-@keyframes pulse-multi {
-    0% { transform: scale(1); }
-    20% { transform: scale(1.05); }
-    40% { transform: scale(1); }
-    60% { transform: scale(1.05); }
+@keyframes pulse-soft {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(176, 95, 95, 0.45);
+    }
+
+    50% {
+        transform: scale(1.06);
+        box-shadow: 0 0 0 14px rgba(176, 95, 95, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(176, 95, 95, 0);
+    }
 }
 
-.pulse-multi {
-animation: pulse-multi 1.2s ease-in-out;
+.whatsapp-pulse {
+    animation: pulse-soft 2.6s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
+
 
 /* Scroll */
-::-webkit-scrollbar {
+#app::-webkit-scrollbar {
     width: 10px;
 }
 
-::-webkit-scrollbar-track {
+#app::-webkit-scrollbar-track {
     background: none;
 }
 
-::-webkit-scrollbar-thumb {
+#app::-webkit-scrollbar-thumb {
     background: #B16171;
     border-radius: 6px;
 }
 
-::-webkit-scrollbar-thumb:hover {
+#app::-webkit-scrollbar-thumb:hover {
     background: #B16171;
 }
 
